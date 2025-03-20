@@ -12,6 +12,14 @@
         table {
             width: 400px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
         }
 
         td, th {
@@ -22,6 +30,16 @@
         thead, tfoot {
             background-color: rgb(122, 119, 119);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(122, 119, 119);
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -37,6 +55,7 @@
         ANATOMIA PARA TABELAS GRANDES
         
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -46,10 +65,11 @@
     -->
 
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         
@@ -86,14 +106,51 @@
                 <td>Ceará</td>
                 <td class="num">9.132.078</td>
             </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.664.306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8.058.441</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.350.483</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.010.960</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.281.209</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.145.040</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.102.129</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.836.399</td>
+            </tr>
         </tbody>
         
         <tfoot>
             <tr>
-                <th>Habitantes</th>
+                <th scope="row">Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex, reiciendis tenetur saepe vel quisquam amet adipisci ratione voluptate officia iure rem. Accusamus non a quasi ex, dolorem commodi sit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatem, accusantium porro aliquid cupiditate aspernatur iste odio earum ut, perferendis ratione officiis sunt alias voluptas nam. Voluptatibus quod inventore facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit mollitia quaerat facilis earum unde, totam perspiciatis omnis. Tempora rerum excepturi est. Veritatis laboriosam unde doloremque quidem cupiditate explicabo modi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex, reiciendis tenetur saepe vel quisquam amet adipisci ratione voluptate officia iure rem. Accusamus non a quasi ex, dolorem commodi sit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatem, accusantium porro aliquid cupiditate aspernatur iste odio earum ut, perferendis ratione officiis sunt alias voluptas nam. Voluptatibus quod inventore facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit mollitia quaerat facilis earum unde, totam perspiciatis omnis. Tempora rerum excepturi est. Veritatis laboriosam unde doloremque quidem cupiditate explicabo modi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex, reiciendis tenetur saepe vel quisquam amet adipisci ratione voluptate officia iure rem. Accusamus non a quasi ex, dolorem commodi sit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatem, accusantium porro aliquid cupiditate aspernatur iste odio earum ut, perferendis ratione officiis sunt alias voluptas nam. Voluptatibus quod inventore facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit mollitia quaerat facilis earum unde, totam perspiciatis omnis. Tempora rerum excepturi est. Veritatis laboriosam unde doloremque quidem cupiditate explicabo modi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex, reiciendis tenetur saepe vel quisquam amet adipisci ratione voluptate officia iure rem. Accusamus non a quasi ex, dolorem commodi sit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatem, accusantium porro aliquid cupiditate aspernatur iste odio earum ut, perferendis ratione officiis sunt alias voluptas nam. Voluptatibus quod inventore facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit mollitia quaerat facilis earum unde, totam perspiciatis omnis. Tempora rerum excepturi est. Veritatis laboriosam unde doloremque quidem cupiditate explicabo modi?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ex, reiciendis tenetur saepe vel quisquam amet adipisci ratione voluptate officia iure rem. Accusamus non a quasi ex, dolorem commodi sit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatem, accusantium porro aliquid cupiditate aspernatur iste odio earum ut, perferendis ratione officiis sunt alias voluptas nam. Voluptatibus quod inventore facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi odit mollitia quaerat facilis earum unde, totam perspiciatis omnis. Tempora rerum excepturi est. Veritatis laboriosam unde doloremque quidem cupiditate explicabo modi?</p>
 </body>
 </html>
